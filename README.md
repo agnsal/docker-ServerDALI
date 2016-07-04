@@ -7,7 +7,7 @@ docker pull agnesesalutari/serverdali
 docker run -d -p 8000:80 agnesesalutari/serverdali
 curl $(docker-machine ip default):8000
 
-#To see it on your browser: http://192.168.99.100:8000/ServerDALI 
+To see it on your browser: http://192.168.99.100:8000/ServerDALI 
 
 docker ps
 docker exec -it <process_name> bash
