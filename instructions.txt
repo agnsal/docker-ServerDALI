@@ -1,5 +1,5 @@
-docker pull agnesesalutari/serverdali
-docker run -d -p 8000:80 agnesesalutari/serverdali
+docker pull agnesesalutari/docker-serverdali
+docker run -d -p 8000:80 agnesesalutari/docker-serverdali
 curl $(docker-machine ip default):8000
 
 //To see it on your browser: http://docker-machine_ip/ServerDALI
