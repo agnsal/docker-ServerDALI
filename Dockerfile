@@ -14,7 +14,7 @@ RUN git clone git://github.com/agnsal/ServerDALI
 RUN git clone git://github.com/AAAI-DISIM-UnivAQ/DALI
 RUN git clone git://github.com/agnsal/ServerDALImas
 
-RUN cp -t /DALI /ServerDALI
+RUN mv -t /DALI /ServerDALI
 RUN mv -t /ServerDALImas /ServerDALI/DALI
 
 EXPOSE 80/tcp
