@@ -7,6 +7,8 @@ RUN apt-get install -y libc6-i386
 RUN apt-get install -y lib32ncurses5
 RUN apt-get install -y lib32stdc++6
 
+RUN apt-get install -y vim
+
 RUN apt-get install -y build-essential
 
 RUN apt-get -y install wget git
@@ -18,6 +20,8 @@ RUN cp -a DALI ServerDALI/
 RUN rm -r -f DALI
 RUN cp -a ServerDALImas ServerDALI/DALI/
 RUN rm -r -f ServerDALImas
+RUN cd ServerDALI/DALI/ServerDALImas/conf
+RUN mkdir mas
 
 EXPOSE 80/tcp
 EXPOSE 3306/tcp
