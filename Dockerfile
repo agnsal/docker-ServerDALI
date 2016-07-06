@@ -18,7 +18,7 @@ RUN cp -a DALI ServerDALI/
 RUN rm -r -f DALI
 RUN cp -a ServerDALImas ServerDALI/DALI/
 RUN rm -r -f ServerDALImas
-RUN cp -a ServerDALI/personale.pl ServerDALI/DALI/
+RUN cp ServerDALI/personale.pl ServerDALI/DALI/ServerDALImas/
 RUN rm -r -f ServerDALI/personale.pl
 
 EXPOSE 80/tcp
