@@ -14,10 +14,10 @@ RUN git clone git://github.com/agnsal/ServerDALI
 RUN git clone git://github.com/AAAI-DISIM-UnivAQ/DALI
 RUN git clone git://github.com/agnsal/ServerDALImas
 
-RUN cp -a /DALI /ServerDALI
-RUN cp -a /ServerDALImas /ServerDALI/DALI
-RUN rm -r -f /DALI
-RUN rm -r -f /ServerDALImas
+RUN cp -a DALI ServerDALI/
+RUN cp -a ServerDALImas ServerDALI/DALI/
+RUN rm -r -f DALI
+RUN rm -r -f ServerDALImas
 
 EXPOSE 80/tcp
 EXPOSE 3306/tcp
