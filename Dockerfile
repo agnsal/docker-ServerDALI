@@ -20,8 +20,7 @@ RUN cp -a DALI ServerDALI/
 RUN rm -r -f DALI
 RUN cp -a ServerDALImas ServerDALI/DALI/
 RUN rm -r -f ServerDALImas
-RUN cd ServerDALI/DALI/ServerDALImas/conf
-RUN mkdir mas
+RUN cd ServerDALI/DALI/ServerDALImas/conf && mkdir mas
 
 EXPOSE 80/tcp
 EXPOSE 3306/tcp
