@@ -20,7 +20,7 @@ RUN cp -a DALI ServerDALI/
 RUN rm -r -f DALI
 RUN cp -a ServerDALImas ServerDALI/DALI/
 RUN rm -r -f ServerDALImas
-RUN cd ServerDALI/DALI/ServerDALImas/conf && mkdir mas && chmod u+rx makeconf.sh && chmod u+rx startagent.sh
+RUN cd ServerDALI/DALI/ServerDALImas/conf && mkdir mas
 RUN export TERM=xterm
 
 EXPOSE 80/tcp
