@@ -21,7 +21,6 @@ RUN rm -r -f DALI
 RUN cp -a ServerDALImas ServerDALI/DALI/
 RUN rm -r -f ServerDALImas
 RUN cd ServerDALI/DALI/ServerDALImas/conf && mkdir mas
-RUN export TERM=xterm
 
 EXPOSE 80/tcp
 EXPOSE 3306/tcp
