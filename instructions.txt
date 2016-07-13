@@ -7,11 +7,16 @@ curl $(docker-machine ip default):8000
 docker ps
 docker exec -it process_name bash
 
-//You have to install SICStus --prebuilt in the path /user
+//You have to install SICStus --prebuilt in the path /user/local
+
+//To run DALI:
+cd ServerDALI/DALI/ServerDALImas/conf
+chmod u+rx makeconf.sh
+chmod u+rx startagent.sh
 
 exit
 docker commit container_id //You need a commit to save the container after SICStus installation.
 
 docker exec -it process_name bash
 cd ServerDALI/DALI/ServerDALImas
-bash ./startmasMary.sh
+bash startmasMary.sh
